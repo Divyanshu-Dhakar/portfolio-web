@@ -1,0 +1,84 @@
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem 10rem;
+}
+.hero-content{
+font-family: 'Poppins';
+}
+.hero-photo{
+    width: 96%; max-width: 960px; margin: 0 auto;
+}
+
+.hero-photo img{
+    width: 100%; height: auto;
+    max-width: 30rem;
+}
+.hero-content h4{
+    font-size: 24px;
+    font-weight: 500;
+line-height: 3rem;
+}
+
+.hero-content h1{
+   color: #003971;
+    font-size: 75px; 
+    font-weight: 700;
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+
+    animation: typing 2.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+.hero-content h3{
+
+    font-size: 36px;
+    font-weight: 600;
+
+}
+
+@media screen and (max-width: 1100px) {
+
+
+    .hero-section{
+        height: calc(100vh - 100px);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin: 2rem 1rem;
+    }
+    .hero-content{
+       padding: 1rem;
+    }
+    .hero-content h2{
+        font-size: 24px;
+        font-weight: 500;
+    
+    }
+    .hero-content h3{
+        font-size: 1.5rem;
+        font-weight: 500;
+    
+    }
+    .hero-content h4{
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+    }
+    .hero-content h1{
+
+        font-size: 32px 
+
+    
+    }
+
+    }

@@ -1,0 +1,35 @@
+body{
+background-color: rgb(248, 252, 255);
+	will-change: transform;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    
+}
+html{
+	scroll-behavior: smooth;
+}
+
+@keyframes scaleDown {
+	to { opacity: 0; transform: scale(.8); }
+}
+
+@keyframes scaleUp {
+    
+	from { opacity: 0; transform: scale(.8); }
+}
+
+@keyframes scaleUpDown {
+	from { opacity: 0; transform: scale(1.2); }
+}
+
+@keyframes scaleDownUp {
+	to { opacity: 0; transform: scale(1.2); }
+}
+
+@keyframes scaleDownCenter {
+	to { opacity: 0; transform: scale(.7); }
+}
+
+@keyframes scaleUpCenter {
+	from { opacity: 0; transform: scale(.7); }
+}
